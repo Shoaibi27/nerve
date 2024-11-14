@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 400px; /* Increased the width */
+    text-align: center;
+    padding: 20px; /* Added padding for a larger UI */
+    border-radius: 15px; /* Added rounding to container edges */
+    background-color: #ffffff; /* Added a white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added a shadow for depth */
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.toggle button {
+    flex: 1;
+    padding: 12px; /* Increased padding for larger buttons */
+    cursor: pointer;
+    border-radius: 15px; /* Added border-radius for curved sides */
+    border: 1px solid #ccc; /* Added border */
+    background-color: #e0e0e0; /* Lighter background color */
+    margin: 0 5px; /* Added spacing between buttons */
+    transition: background-color 0.3s ease; /* Added a hover transition */
+}
+
+.toggle .active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.toggle button:hover {
+    background-color: #C0C0C0; /* Added a hover effect */
+}
+
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better appearance */
+    margin-bottom: 20px;
+    font-size: 16px; /* Enlarged font */
+    border-radius: 10px; /* Curved edges */
+    border: 1px solid #ccc; /* Added border */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 18px; /* Increased padding for larger cards */
+    background-color: #fff;
+    margin: 8px 0; /* Increased margin for spacing */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px; /* Curved card edges */
+}
+
+.empty-state {
+    color: #777;
+    font-size: 16px; /* Slightly larger text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .toggle {
+        flex-direction: column;
+    }
+    .toggle button {
+        margin-bottom: 10px; /* Add space between buttons on small screens */
+    }
+    .container {
+        width: 100%;
+        padding: 15px; /* Reduced padding for small screens */
+    }
+    .card {
+        font-size: 0.9em;
+        padding: 12px; /* Adjust padding for small screens */
+    }
+}
